@@ -16,7 +16,7 @@
 
 ### Pre-built binaries
 
-See the [release](https://github.com/redhatxl/kubectl-img/releases) page for the full list of pre-built assets.
+See the [release](https://github.com/tcyi/kubectl-img/releases) page for the full list of pre-built assets.
 
 The commands here show `amd64` versions, `386` versions are available in the releases page.
 
@@ -24,7 +24,7 @@ The commands here show `amd64` versions, `386` versions are available in the rel
 
 ```bash
 export release=v1.0.0
-curl -L -o kubectl-img.tar.gz https://github.com/redhatxl/kubectl-img/releases/download/${release}/kubectl-img_${release}_Linux_arm64.tar.gz
+curl -L -o kubectl-img.tar.gz https://github.com/tcyi/kubectl-img/releases/download/${release}/kubectl-img_${release}_Linux_arm64.tar.gz
 tar -xvf kubectl-img.tar.gz
 cp kubectl-img /usr/local/bin/kubectl-img
 # use kubectl krew
@@ -35,7 +35,7 @@ cp kubectl-img $HOME/.krew/bin
 
 ```bash
 export release=v1.0.0
-curl -L -o kubectl-img.tar.gz https://github.com/redhatxl/kubectl-img/releases/download/${release}/kubectl-img_${release}_Darwin_x86_64.tar.gz
+curl -L -o kubectl-img.tar.gz https://github.com/tcyi/kubectl-img/releases/download/${release}/kubectl-img_${release}_Darwin_x86_64.tar.gz
 tar -xvf kubectl-img.tar.gz
 mv kubectl-img /usr/local/bin/kubectl-img
 # use kubectl krew
@@ -47,7 +47,7 @@ cp kubectl-img $HOME/.krew/bin
 
 In PowerShell v5+
 ```powershell
-$url = "https://github.com/redhatxl/kubectl-img/releases/download/v1.0.0/kubectl-img_1.0.0_Windows_x86_64.tar.gz"
+$url = "https://github.com/tcyi/kubectl-img/releases/download/v1.0.0/kubectl-img_1.0.0_Windows_x86_64.tar.gz"
 $output = "$PSScriptRoot\kubectl-img.zip"
 
 Invoke-WebRequest -Uri $url -OutFile $output
