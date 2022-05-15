@@ -61,7 +61,7 @@ Expand-Archive "$PSScriptRoot\kubectl-img.zip" -DestinationPath "$PSScriptRoot\k
 Using go modules, you can build kubectl-img at any git tag:
 
 ```
-$ GO111MODULE=on go get github.com/redhatxl/kubectl-img/cmd/kubectl-img@latest
+$ GO111MODULE=on go get github.com/tcyi/kubectl-img/cmd/kubectl-img@latest
 ```
 
 This will download and compile `kubectl-img` so that you can use it as a kubectl plugin with `kubectl img`, note that you will need to be on a recent version of go which supports go modules.
@@ -139,5 +139,5 @@ kubectl img image --deployments -n default -j
 
 ## Blog
 
-* [磊哥的云原生笔记](https://redhatxl.github.io/cloud-native/develop/04-Cobra%20%2B%20Client-go%E5%AE%9E%E7%8E%B0K8s%E7%AE%80%E5%8D%95%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/)
+* [云原生笔记](https://redhatxl.github.io/cloud-native/develop/04-Cobra%20%2B%20Client-go%E5%AE%9E%E7%8E%B0K8s%E7%AE%80%E5%8D%95%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/)
 * [Cobra + Client-go实现K8s 自定义插件开发](https://juejin.cn/post/6983324056502140964)
